@@ -1,3 +1,3 @@
 FROM node
-RUN npm install --global mermaid.cli
-ENTRYPOINT ["mmdc"]
+RUN npm install mermaid.cli
+ENTRYPOINT ["./node_modules/.bin/mmdc"]
